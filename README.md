@@ -64,3 +64,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 con template y estilos en el mismo fichero
 
     ng g c components/ngStyle -it -is
+    
+#### Último video
+
+118-aplicando-css-a-un-slo-componente

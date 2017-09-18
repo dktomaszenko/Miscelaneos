@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-css',
@@ -7,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
       css Works!
     </p>
   `,
-  styles: []
+  styles: [
+      `
+      p {
+        color: red;
+        font-size: 20px;
+      }
+    `
+  ]
 })
 export class CssComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
