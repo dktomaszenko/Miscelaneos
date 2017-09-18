@@ -16,6 +16,19 @@
   Crearemos una pequeña aplicación para el uso de rutas y rutas hijas.
   Comprenderemos el ciclo de vida de un componente o directiva.
   Entre otras cosas bien interesantes.
+  
+  # …or create a new repository on the command line
+  
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/dktomaszenko/Miscelaneos.git
+    git push -u origin master
+    
+  # …or push an existing repository from the command line
+  
+    git remote add origin https://github.com/dktomaszenko/Miscelaneos.git
+    git push -u origin master
 
 # Miscelaneos
 
