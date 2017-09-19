@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-clases',
@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClasesComponent implements OnInit {
 
-  constructor() { }
+  alerta = 'alert-danger';
+  propiedades: object = {
+    danger: false
+  };
+  loading: boolean = false;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  ejecutar() {
+    this.loading = true;
+
+    setTimeout(() => {
+      this.loading = false;
+    }, 3000);
+
   }
 
 }

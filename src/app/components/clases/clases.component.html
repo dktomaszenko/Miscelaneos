@@ -1,3 +1,22 @@
-<p>
-  clases works!
-</p>
+<div [ngClass]="{ 'alert-info': !propiedades.danger, 'alert-danger': propiedades.danger}" class="alert" role="alert">
+  <strong>Well done!</strong> You successfully read this important alert message.
+</div>
+
+<button class="btn btn-outline-primary" (click)="propiedades.danger = !propiedades.danger">GO</button>
+
+<br>
+<br>
+<br>
+<h3>Proceso asíncrono</h3>
+
+<button
+  (click)="ejecutar()"
+  type="button"
+  name="button"
+  class="btn btn-primary"
+  [disabled]="loading">
+  <i [ngClass]="{ 'fa-save': !loading, 'fa-refresh fa-spin': loading }" class="fa"></i>
+  <span *ngIf="!loading">Guardar</span>
+  <span *ngIf="loading">Espera...</span>
+</button>
+
